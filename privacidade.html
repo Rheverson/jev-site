@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JEV · Política de Privacidade</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px; color: #1d2330; background: #fff; }
+  h1 { font-size: 1.7em; margin-bottom: .2em; } h2 { font-size: 1.15em; margin-top: 1.8em; }
+  .data { color: #667; margin-top: 0; } a { color: #2457c5; }
+</style>
+</head>
+<body>
+<h1>Política de Privacidade do JEV</h1>
+<p class="data">Última atualização: 14 de outubro de 2026</p>
+
+<p>O JEV é um assistente pessoal para Windows, de uso privado, instalado no computador do próprio usuário. Esta
+política explica quais dados o JEV acessa, como os usa e como o usuário pode revogar o acesso.</p>
+
+<h2>1. Quem é o responsável</h2>
+<p>O JEV é desenvolvido e usado por Rheverson Lino. Contato: <a href="mailto:revlino53@gmail.com">revlino53@gmail.com</a>.</p>
+
+<h2>2. Dados do Google que o JEV acessa</h2>
+<p>Somente depois que o usuário conecta a própria conta Google e autoriza na tela de consentimento do Google:</p>
+<ul>
+  <li><b>Gmail</b> (<code>gmail.modify</code>): ler e buscar e-mails, criar rascunhos, marcar como lido/arquivar e
+    enviar e-mails pedidos pelo usuário.</li>
+  <li><b>Google Agenda</b> (<code>calendar</code>): listar compromissos, criar e cancelar eventos pedidos pelo usuário.</li>
+  <li><b>Google Drive</b> (<code>drive.readonly</code> e <code>drive.file</code>): buscar e ler arquivos do usuário e
+    criar documentos novos (por exemplo, atas no Google Docs).</li>
+  <li><b>Perfil básico</b> (<code>openid</code>, <code>email</code>): identificar qual conta está conectada.</li>
+</ul>
+
+<h2>3. Como os dados são usados</h2>
+<ul>
+  <li>Os dados são usados apenas para atender aos pedidos que o próprio usuário faz ao assistente (por exemplo, “o
+    que tenho hoje?”, “resuma meus e-mails não lidos”, “responda que confirmo”).</li>
+  <li>Enviar e-mail, criar ou cancelar evento e criar documento sempre exigem a confirmação explícita do usuário.</li>
+  <li>Para entender o pedido e escrever a resposta, o trecho necessário (por exemplo, o assunto e o texto de um
+    e-mail) é enviado à API de inteligência artificial da Anthropic (Claude), que processa o conteúdo apenas para
+    gerar a resposta e não o usa para treinar modelos.</li>
+  <li>O JEV <b>não vende, não aluga e não compartilha</b> dados com terceiros para publicidade ou qualquer outro fim,
+    e não usa os dados para criar perfis de anúncios.</li>
+  <li>Nenhuma pessoa além do próprio usuário lê os dados.</li>
+</ul>
+
+<h2>4. Armazenamento e segurança</h2>
+<ul>
+  <li>O JEV funciona no computador do usuário. O acesso à conta Google (token de atualização) fica guardado no cofre
+    de credenciais do Windows, nunca em arquivo de texto nem em servidores do JEV.</li>
+  <li>E-mails, eventos e arquivos são buscados no Google no momento do pedido e não são copiados para servidores
+    próprios. Conversas com o assistente ficam no computador do usuário.</li>
+  <li>As comunicações com o Google e com a Anthropic são criptografadas (HTTPS).</li>
+</ul>
+
+<h2>5. Uso limitado (Google API Services User Data Policy)</h2>
+<p>O uso e a transferência, pelo JEV, de informações recebidas das APIs do Google seguem a
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços
+de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+<h2>6. Como revogar o acesso e apagar os dados</h2>
+<ul>
+  <li>No JEV: peça “desconecte meu Google”. O acesso é revogado no Google e apagado do cofre do Windows.</li>
+  <li>No Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> › JEV ›
+    Remover acesso.</li>
+  <li>Desinstalar o JEV apaga os dados locais.</li>
+</ul>
+
+<h2>7. Alterações</h2>
+<p>Mudanças nesta política serão publicadas nesta página, com a data de atualização.</p>
+</body>
+</html>
